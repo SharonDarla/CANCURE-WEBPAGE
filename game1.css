@@ -1,0 +1,216 @@
+html{
+  height:2000px;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: right;
+    height: 100%;
+    width:100%;
+    margin: -20px 0 50px;
+    margin-top: 20px; 
+}
+.pooji{
+    width: 100%;
+    height: 100vh;
+    background-color: white ;
+    background-size: cover;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 100px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li a{
+    color: white;
+    position: relative;
+    padding: 5px 0;
+}
+nav ul li a:hover{
+    color: #1ec5e6;
+}
+nav ul li a:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #1ec5e6;
+    transition: .3s;
+    bottom: 0;
+}
+nav ul li a:hover:after{
+    width: 100%;
+}
+.btn{
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 16px 40px;
+    border-radius: 500px;
+    display: inline-block;
+    font-weight: 500;
+    transition: all .4s ease-in-out;
+    background-size: 152% 100%;
+    background: #fd4766;
+    border: 2px solid #fd4766;
+}
+.btn:hover{
+    background: transparent;
+    border-color: #fd4766;
+    color: #fd4766;
+}
+.game__wrapper {
+    position: absolute;
+    left: 50%;
+    top: 130px;
+    transform: translateX(-50%);
+    height: 750px;
+    width: 700px;
+  background-color: #f2f2f3;
+  
+  
+}
+
+.game__wrapper--title {
+    letter-spacing: 3px;
+    word-spacing: 6px;
+    font-weight: 600;
+    color: black;
+    padding-bottom: 12px;
+    text-align: center;
+    font-size: 26px;
+  font-style:"Montserrat";
+}
+
+.game__wrapper--pitch {
+    height: 495px;
+    width: 330px;
+    background-color: rgba(61, 100, 350, 0.48);
+    display: flex;
+    flex-wrap: wrap;
+  margin:auto;
+}
+
+.pitch__block {
+    height: 165px;
+    width: 165px;
+    transition: .1s;
+}
+
+.pitch__block--medium {
+    height: 110px;
+    width: 110px;
+}
+
+.pitch__block--hard {
+    height: 68px;
+    width: 66px;
+}
+
+.light {
+    background-color: #1c99fe;
+}
+
+.light__medium {
+    background-color: #7644ff;
+}
+
+.light__hard {
+    background-color: #fd4766;
+}
+
+.game__wrapper--score {
+    text-align: center;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.game__wrapper--mode {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    width: 100%;
+}
+
+.game__wrapper--mode button {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+    outline: none;
+    border: none;
+    transition: .2s;
+    height: 40px;
+    width: 90px;
+}
+
+.game__mode--easy {
+    background-color: #1c99fe;
+}
+
+.game__mode--medium {
+    background-color: #7644ff;
+}
+
+.game__mode--hard {
+    background-color: #fd4766;
+}
+
+.game__footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    background-color: rgba(190, 190, 190, 0.274);
+}
+
+.game__footer--info {
+    color: rgb(92, 92, 92);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(92, 92, 92);
+}
+
+@media (min-width: 860px) {
+    .game__footer {
+        padding-left: 30%;
+        padding-right: 30%;
+    }
+}
+
+@media (min-width: 1660px) {
+    .game__footer {
+        padding-left: 38%;
+        padding-right: 38%;
+    }
+}
+
+@media (max-height: 745px) {
+    .game__footer {
+        bottom: -210px;
+    }
+}
+
+@media (max-height: 515px) {
+    .game__footer {
+        bottom: -510px;
+    }
+}
